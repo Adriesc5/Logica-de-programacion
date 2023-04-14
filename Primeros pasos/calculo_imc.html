@@ -33,5 +33,28 @@
 
 	imprimir(nombre + ", su imc calculado es: " + imcCalculado);
 
-</script>
+
+	if(imcCalculado < 18.5){
+		imprimir("Abajo de lo recomendado")
+	}
+
+	if(imcCalculado > 18.5 && imcCalculado < 24.9){
+		imprimir("Intervalo normal")
+	}
+
+	if(imcCalculado >= 25 && imcCalculado < 29.9){
+		imprimir("Obesidad")
+	}
+
+	if(imcCalculado >= 30 && imcCalculado < 34.9){
+		imprimir("Obesidad clase 1")
+	}
+	if(imcCalculado >= 35 && imcCalculado < 39.9){
+		imprimir("Obesidad clase 2")
+	}
+	if(imcCalculado >= 40){
+		imprimir("Obesidad clase 3")
+	}
+
+
 </script>
