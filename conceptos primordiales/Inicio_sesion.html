@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+<script>
+
+    var inicioDeSesionRegistrado = "alura";
+    var contrasenhaRegistrada = "alura321";
+
+    
+    var contador =1;
+    var intentos =3;
+   
+    while(contador <= intentos){
+            var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+            var contrasenhaIngresada = prompt("Ingrese su contraseña");
+        
+        if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+            alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+            break;
+        } else {
+            alert("inicio de sesión inválido. Favor intente de nuevo");;
+            
+        }
+        contador++;
+    }
+    if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+            document.write("Bienvenido al sistema " + inicioDeSesionIngresado);
+            
+    } else {
+            document.write("inicio de sesión inválido. Favor de contactar a soporte, su usuario ha sido bloqueado");;
+            
+    }
+
+    
+</script>
