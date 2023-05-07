@@ -4,27 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi PRIMERA PAGINA WEB</title>
+    <title>Barberia - Adrian</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+    
 </head>
 <body>
-    <header> <h1 class="titulo-principal">Barberia Adrian</h1></header>
-    <img id="banner" src="banner.jpg" alt="">
-    <div class="principal">
-        <h2 class="titulo-centralizado">Sobre la Barbería Alura</h2>
-        <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente.</p>
-        <p id="mission"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes"</strong>.</em></p>
-        <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p>    
-    </div>
-    <div class="diferenciales">
-    <h3 class="titulo-centralizado">Diferenciales</h3>
-      <ul>
-         <li class="items">Atencion personalizada a los clientes</li>
-         <li class="items">Espacio diferenciado</li>
-         <li class="items">Localizacion</li>
-         <li class="items">Especializacion</li>
-     </ul>
-     <img id="imgDiferenciales" src="diferenciales.jpg" alt="">
-    </div>
+    <header>
+        <div class="caja">
+            <h1><img src="imagenes/logo.png"></h1>
+            <nav>
+                <ul class="navegacion">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+    <main>
+        <img class="banner" src="imagenes/banner.jpg" alt="">
+        <section class="principal">
+                <h2 class="titulo-principal">Sobre la Barbería Alura</h2>
+                <img class="utensilios" src="imagenes/utensilios[1].jpg" alt="utencilios">
+                <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente.</p>
+                <p id="mission"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes"</strong>.</em></p>
+                <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p>    
+        </section> 
+
+        <section class="mapa">
+            <h3 class="titulo-principal">Nuestra Ubicacion</h3>
+            <p>Nuestro establecimiento esta ubicado en el corazon de la ciudad</p>
+            <div class="mapa-contenido">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14007.664794257724!2d-106.08376979827882!3d28.632273604031845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea4353109cea7f%3A0x454a77a5f11ab184!2sCentro%20Cultural%20Quinta%20Gameros!5e0!3m2!1ses-419!2smx!4v1683328521519!5m2!1ses-419!2smx" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>  
+
+        <section class="diferenciales">
+                <h3 class="titulo-principal">Diferenciales</h3>
+                    <div class="contenidoDiferenciales">
+                        <ul class="listaDiferenciales">
+                            <li class="items">Atencion personalizada a los clientes</li>
+                            <li class="items">Espacio diferenciado</li>
+                            <li class="items">Localizacion</li>
+                            <li class="items">Especializacion</li>
+                            <li class="items">Puntualidad</li>
+                            <li class="items">Limpieza</li>
+                        </ul><img id="imgDiferenciales" src="imagenes/diferenciales.jpg" alt="">
+                    </div>
+                    <div class="video">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                
+        </section>
+        
+        
+    </main>
+    <footer>
+        <img src="imagenes/logo-blanco.png" alt="">
+        <p class="copyright">&copy Copyright Barberia Adrian - 2023</p>
+    </footer>
 </body>
 </html>

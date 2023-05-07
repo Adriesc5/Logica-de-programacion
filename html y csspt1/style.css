@@ -1,49 +1,245 @@
-.titulo-principal{
-    padding: 30px;
-    text-align: center;
+body{
+    font-family: 'Roboto Condensed', sans-serif;
 }
-#banner{
+header{
+    background-color: #cccccc;
+    padding: 20px 0;
+}
+.caja{
+    width: 1040px;
+    position: relative;
+    margin: 0 auto;
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+
+}
+
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+
+
+}
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000 ;
+    border-radius: 15px;
+
+}
+.productos li:hover{
+    border-color: blue;
+    border-style: dotted;
+    
+}
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+.productoDesc{
+    font-size: 18px;
+    
+}
+
+.ProductoPrecio{
+    font-size: 20px;
+    font-weight: bold;  
+    margin-top: 10px;
+
+}
+nav a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 50px;
+
+}
+.copyright {
+    color: #ffffff ;
+    font-size: 12px;
+    text-align: end;
+    padding: 20px;
+        
+}
+
+form{
+    margin: 40px 0 ;
+}
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%; 
+}
+.check-box{
+    margin: 10 20px;
+}
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: blue;
+    border: none;
+    border-radius: 7px;
+    transition: 1.5s all;
+    cursor: pointer;
+}
+.enviar:hover{
+    background: darkblue;
+    transform: scale(1.2);
+}
+table{
+    margin: 40px 40px;
+}
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+td,th{
+    border: 1px solid black;
+    padding: 8px;
+}
+/*CSS Para nuestra index*/  
+.banner{
     width: 100%;
 }
+section {
+    width: 940px;
+}
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    color: #000;
+}
 .principal{
-    background: #cccccc;
-    padding: 20px;
+    width: 100%;
+    margin:  0 auto;
+    padding: 3em;
+    background: #fefefe;  
 }
-h2{
-    text-align: center;
-    background: #CCCCCC;
+.principal p{
+    margin: 0 0 1em;
 }
-
-p{
-    text-align: center;
+.principal strong{
+    font-weight: bold;
 }
-
-em strong{
-    color: #0000ff;
-}
-
-#mission{
-    font-size: 20px;
-}
-
-.diferenciales{
-    background: white;
-}
-.titulo-centralizado{
-    text-align: center;
-}
-.items{
+.principal em{
     font-style: italic;
 }
-ul{
-    display: inline-block;
-    vertical-align: top;
-    width: 30%;
-    margin-right: 15%;
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 0 20px;
+}
+.mapa{
+    background: linear-gradient(#fefefe, #888888);
+    padding: 3em 0;
+    width: 100%;
+}
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+    align-items: center;
+
+}
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
+    width: 100%;
 }
 #imgDiferenciales{
-    width: 500px;
-    padding: auto;
-
+    width: 55%;
+    display: inline-block;
+    transition: 2s;
+    box-shadow: 10px 10px 30px 15px #000;
+}
+#imgDiferenciales:hover{
+    opacity: .3 ;
+}
+.video{
+    width: 560px;
+    margin: 2em auto;
+    background: #888888;
 }
 
+.contenidoDiferenciales{
+    width: 640px;
+    margin: 0 auto;
+    
+}
+.listaDiferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+.items{
+    line-height: 1.5;
+}
+.items:before{
+    content: "🟂";
+}
+.items:first-child{
+    font-weight: bold;
+}
+.main-contact{
+    margin: 0 25%;
+}
+
+@media screen and (max-width:480px) {
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .mapa-contenido, .video, .contenidoDiferenciales, .principal{
+        width: auto;
+    }
+    .listaDiferenciales, #imgDiferenciales{
+        width: 100%;
+    }
+}
